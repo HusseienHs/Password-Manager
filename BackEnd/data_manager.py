@@ -20,7 +20,7 @@ def save_data(website, email, password, website_entry, password_entry):
                 json.dump(new_data, data_file, indent=4)
         else:
             data.update(new_data)
-            #w
+            #w1
             with open("data.json", "w") as data_file:
                 json.dump(data, data_file, indent=4)
                 messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}\nSaved")
